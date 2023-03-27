@@ -22,4 +22,14 @@ module.exports = {
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
   },
+  'import/order': [
+    'error',
+    {
+      alphabetize: {
+        caseInsensitive: false,
+        order: 'asc',
+      },
+      'newlines-between': 'always',
+    },
+  ],
 };
