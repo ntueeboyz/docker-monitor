@@ -7,7 +7,7 @@ services:
     volumes:
       - './:/www'
       - '/www/node_modules'
-      - /var/run/docker.sock.raw:/var/run/docker.sock
+      - /var/run/docker.sock:/var/run/docker.sock
     container_name: docker-monitor
     env_file:
       - .env
