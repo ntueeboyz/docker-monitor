@@ -10,6 +10,6 @@ export class ContainersService {
       url: '/containers/json?all=true',
     });
 
-    return { result: data ? data : 'Data not found' };
+    return { result: data.data ? data.data : 'Data not found!' };
   }
 }
