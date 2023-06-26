@@ -1,12 +1,10 @@
 FROM node:lts-alpine3.17
-MAINTAINER ming
 
-WORKDIR /www
+WORKDIR /app
 
 COPY . .
 
-Run npm install
-
-EXPOSE 80 443 1300
+RUN npm i -g @nestjs/cli && \ 
+    npm install
 
 CMD npm run start:dev
