@@ -5,16 +5,15 @@ services:
       context: ./
       dockerfile: Dev.Dockerfile
     volumes:
-      - './:/www'
-      - '/www/node_modules'
+      - './:/app'
+      - '/app'
       - /var/run/docker.sock:/var/run/docker.sock
     container_name: docker-monitor
     env_file:
       - .env
     ports:
-      - '1300:1300'
+      - '3000:3000'
     stdin_open: true
 networks:
   default:
-    external:
-      name: develop
+    name: develop
