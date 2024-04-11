@@ -12,40 +12,41 @@ Docker Monitor repository.
 ## Installation
 
 ```bash
-$ npm install
+$ npm install --global yar
+$ yarn install
 ```
 
 ## Running the app
 
 ```bash
 # development
-$ npm run start
+$ yarn run start
 
 # watch mode
-$ npm run start:dev
+$ yarn run start:dev
 
 # production mode
-$ npm run start:prod
+$ yarn run start:prod
 ```
 
 ## Test
 
 ```bash
 # unit tests
-$ npm run test
+$ yarn run test
 
 # e2e tests
-$ npm run test:e2e
+$ yarn run test:e2e
 
 # test coverage
-$ npm run test:cov
+$ yarn run test:cov
 ```
 
 ## Stay in touch
 
-- Author - [ntueeboy](https://github.com/NTUEEboy)
-- Website - [https://ntueeboy.github.io/](https://ntueeboy.github.io/)
+- Author - [ntueeboyz](https://github.com/ntueeboyz)
+- Website - [https://ntueeboyz.github.io/](https://ntueeboyz.github.io/)
 
 ## License
 
-  This project is [MIT licensed](https://github.com/NTUEEboy/docker-monitor/blob/master/LICENCE).
+  This project is [MIT licensed](./LICENCE).
